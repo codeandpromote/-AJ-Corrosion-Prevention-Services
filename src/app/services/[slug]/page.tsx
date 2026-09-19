@@ -97,6 +97,23 @@ export default async function ServiceDetailPage({
                   </li>
                 ))}
               </ul>
+
+              {service.image2 ? (
+                <figure className="mt-10">
+                  <div className="relative aspect-[16/10] overflow-hidden border border-line bg-white">
+                    <Image
+                      src={service.image2.src}
+                      alt={service.image2.caption}
+                      fill
+                      sizes="(max-width: 1024px) 100vw, 700px"
+                      className="object-contain p-8"
+                    />
+                  </div>
+                  <figcaption className="mt-3 text-sm text-taupe">
+                    {service.image2.caption}
+                  </figcaption>
+                </figure>
+              ) : null}
             </Reveal>
 
             <Reveal delay={120}>

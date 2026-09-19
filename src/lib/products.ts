@@ -76,7 +76,8 @@ export const products: Product[] = [
     tagline: "Dimensionally stable anodes for impressed current systems",
     summary:
       "Mixed metal oxide coated titanium tubular, rod and wire anodes for deep well and distributed ground beds. Low consumption and a long, predictable design life under continuous impressed current.",
-    image: "/images/field/mmo-anode-borehole-1.jpg",
+    image: "/images/products/mmo-titanium-anode.jpg",
+    fit: "contain",
     specs: [
       { label: "Substrate", value: "Grade 1 titanium, ASTM B338" },
       { label: "Coating", value: "Mixed metal oxide (IrO₂ / Ta₂O₅)" },
@@ -118,9 +119,9 @@ export const products: Product[] = [
   },
   {
     slug: "test-lead-points",
-    name: "Test Lead Points & CP Test Stations",
+    name: "Test Lead Points (TLP)",
     category: "Monitoring",
-    tagline: "H type, B type and special purpose monitoring stations",
+    tagline: "Permanent monitoring stations for the cathodic protection system",
     summary:
       "Fabricated and painted test stations with terminal boards, shunts, links and identification plates. These form the permanent monitoring interface for the cathodic protection system.",
     image: "/images/field/tlp-installation.jpg",
@@ -145,9 +146,8 @@ export const products: Product[] = [
     category: "Monitoring",
     tagline: "Buried Cu/CuSO₄ cells for stable long term measurement",
     summary:
-      "Permanent copper / copper sulphate reference electrodes buried adjacent to the structure, giving a stable reference for potential measurement over the life of the asset. Portable half cells are also supplied for field survey.",
-    image: "/images/products/reference-electrode.webp",
-    fit: "contain",
+      "Permanent copper / copper sulphate reference electrodes buried adjacent to the structure, giving a stable reference for potential measurement over the life of the asset without having to open the ground each time.",
+    image: "/images/field/cable-laying-b-type-tlp.jpg",
     specs: [
       { label: "Type", value: "Cu/CuSO₄ permanent and portable" },
       { label: "Stability", value: "±5 mV over design life" },
@@ -160,7 +160,6 @@ export const products: Product[] = [
       "Tank bottom and mounded bullet potential grids",
       "Critical monitoring locations on pipelines",
       "Remote monitoring unit input reference",
-      "Field survey using portable half cells",
     ],
   },
   {
@@ -189,6 +188,99 @@ export const products: Product[] = [
       "AC interference mitigation earthing",
       "Lightning protection at CP stations",
       "Isolating flange protection in plant areas",
+    ],
+  },
+  {
+    slug: "zinc-anodes",
+    name: "Zinc Anodes",
+    category: "Anodes",
+    tagline: "Galvanic anodes for low resistivity soil and water",
+    summary:
+      "Prepackaged zinc anodes in cotton bags with chemical backfill, supplied with PVC insulated tail cable. Preferred over magnesium in low resistivity soil, in brackish and saline conditions, and wherever the driving voltage of a magnesium anode would be excessive.",
+    image: "/images/field/anode-installation.jpg",
+    specs: [
+      { label: "Alloy", value: "ASTM B418 Type I and Type II" },
+      { label: "Open circuit potential", value: "-1.10 V (CSE)" },
+      { label: "Nominal sizes", value: "5, 12, 24, 30 kg net" },
+      { label: "Backfill", value: "75% gypsum, 20% bentonite, 5% sodium sulphate" },
+      { label: "Current efficiency", value: "Approximately 90%" },
+      { label: "Tail cable", value: "PVC or XLPE insulated, length to order" },
+    ],
+    applications: [
+      "Low resistivity and saline soil conditions",
+      "Jetty, marine and water crossing structures",
+      "Underground vessels and buried tanks",
+      "Locations where excessive driving voltage must be avoided",
+    ],
+  },
+  {
+    slug: "zinc-grounding-cells",
+    name: "Zinc Grounding Cells",
+    category: "Power & Control",
+    tagline: "Passive AC grounding across insulating joints",
+    summary:
+      "Sealed zinc grounding cells fitted across insulating joints and between structures. They provide a low impedance path for AC fault current and lightning surge while maintaining DC isolation, with no electronics to fail and no maintenance requirement.",
+    image: "/images/field/electrical-earthpit.jpg",
+    specs: [
+      { label: "Construction", value: "Two zinc electrodes in a gypsum and bentonite backfill" },
+      { label: "Function", value: "AC grounding with DC isolation maintained" },
+      { label: "Mounting", value: "Buried, across insulating joints or between structures" },
+      { label: "Design life", value: "15 to 20 years depending on fault duty" },
+      { label: "Cable", value: "PVC or XLPE insulated, length to order" },
+      { label: "Maintenance", value: "None required in service" },
+    ],
+    applications: [
+      "Insulating joint protection on city gas and transmission networks",
+      "AC interference mitigation on pipelines parallel to power lines",
+      "Lightning protection at valve stations and CP stations",
+      "Passive alternative where a solid state decoupler is not preferred",
+    ],
+  },
+  {
+    slug: "corrosion-coupons",
+    name: "Corrosion Coupons",
+    category: "Monitoring",
+    tagline: "Direct measurement of protection at a known surface area",
+    summary:
+      "Steel coupons of known surface area buried adjacent to the pipeline and connected through a test station. Because the coupon can be disconnected instantly, it gives an IR drop free potential reading and a direct measurement of current density that the pipeline itself cannot provide.",
+    image: "/images/field/cathode-junction-box.jpg",
+    specs: [
+      { label: "Material", value: "Same grade as the protected structure" },
+      { label: "Surface area", value: "1, 10 or 100 cm2 to order" },
+      { label: "Types", value: "Coupon only, or with integral reference electrode" },
+      { label: "Connection", value: "Through test station with shorting link and shunt" },
+      { label: "Measurement", value: "Instant off potential and coupon current density" },
+      { label: "Burial", value: "At pipe depth, in native soil adjacent to the line" },
+    ],
+    applications: [
+      "IR drop free potential measurement at critical locations",
+      "Current density verification against design assumptions",
+      "AC corrosion risk assessment on interference affected sections",
+      "Coating performance monitoring over time",
+    ],
+  },
+  {
+    slug: "portable-half-cells",
+    name: "Portable Half Cells",
+    category: "Monitoring",
+    tagline: "Field reference electrodes for survey and routine monitoring",
+    summary:
+      "Portable copper / copper sulphate half cells for structure to electrolyte potential measurement during survey and routine monitoring. Supplied with spare porous plugs, crystals and carrying case, in the makes we already hold and deploy in house.",
+    image: "/images/products/reference-electrode.webp",
+    fit: "contain",
+    specs: [
+      { label: "Type", value: "Portable Cu/CuSO4 half cell" },
+      { label: "Makes stocked", value: "Caltech, M.C. Miller" },
+      { label: "Accuracy", value: "Plus or minus 5 mV against a reference standard" },
+      { label: "Tip options", value: "Standard porous plug and extension rod tip" },
+      { label: "Supplied with", value: "Spare plugs, crystals and carrying case" },
+      { label: "Calibration", value: "Checked against a laboratory standard cell" },
+    ],
+    applications: [
+      "Test lead point potential monitoring",
+      "Close interval potential survey",
+      "DCVG and ACVG coating defect survey",
+      "Commissioning and polarisation measurement",
     ],
   },
   {

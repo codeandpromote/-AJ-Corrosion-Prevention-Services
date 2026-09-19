@@ -99,10 +99,20 @@ Three rules are baked into the current content:
    were removed too, because nine visible figures can simply be added up.
 2. **No email addresses.** Every enquiry route is WhatsApp or phone. There are no `mailto:`
    links on the site.
-3. **No downloadable documents.** The company profile, ISO certificate and Udyam
-   certificate PDFs have been removed from `public/`. Certifications are stated on the
-   About page with their reference numbers and validity, but nothing is offered for
-   download. The source PDFs remain in the `website assets/` folder outside the app.
+3. **No downloadable documents, but certificates are viewable.** No PDF is served and
+   nothing can be downloaded. The two certificates are published instead as images under
+   `public/images/certificates/`, opened full screen by `CertificateViewer` from the About
+   page. The company profile is not published at all. The source PDFs remain in the
+   `website assets/` folder outside the app.
+
+   The Udyam image is **page 1 only, with the email address redacted**. Pages 2 and 3 are
+   deliberately not published: page 2 carries the proprietor's PAN, bank name, IFSC code
+   and full account number. If the certificate is ever regenerated, redact again before
+   publishing. Regenerate with:
+
+   ```bash
+   pdftoppm -jpeg -r 150 -f 1 -l 1 "<certificate>.pdf" public/images/certificates/<name>
+   ```
 4. **Photography is AJ's own.** Every photograph in `images/field/` was taken on an AJ
    site, and the filenames match the descriptions supplied by the company. The four images
    in `images/scenes/` and the studio shots in `images/products/` show equipment and

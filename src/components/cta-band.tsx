@@ -48,9 +48,11 @@ export function CtaBand({
 
           <div className="border border-white/12 bg-white/[0.03] p-8 backdrop-blur-sm lg:p-10">
             <p className="eyebrow text-bronze-light">Speak to us directly</p>
+            <p className="font-display mt-4 text-lg text-white">{company.proprietor}</p>
+            <p className="text-sm text-bronze-light">Proprietor</p>
             <a
               href={company.phoneHref}
-              className="font-display mt-5 flex items-center gap-3.5 text-2xl text-white transition-colors hover:text-bronze-light sm:text-[1.75rem]"
+              className="font-display mt-6 flex items-center gap-3.5 text-2xl text-white transition-colors hover:text-bronze-light sm:text-[1.75rem]"
             >
               <PhoneIcon className="h-5 w-5 shrink-0 text-bronze-light" />
               {company.phone}

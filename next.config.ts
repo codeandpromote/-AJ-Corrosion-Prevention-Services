@@ -37,6 +37,17 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 60 * 60 * 24 * 30,
   },
 
+  async redirects() {
+    return [
+      {
+        // Retired: replaced by the current attenuation test survey.
+        source: "/services/coating-integrity-holiday-inspection",
+        destination: "/services/current-attenuation-test",
+        permanent: true,
+      },
+    ];
+  },
+
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

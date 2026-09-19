@@ -4,6 +4,8 @@ export type Service = {
   short: string;
   summary: string;
   image: string;
+  /** Optional second photograph shown alongside the scope of work. */
+  image2?: { src: string; caption: string };
   group: "Engineering" | "Construction" | "Survey & Testing" | "Operations";
   scope: string[];
   deliverables: string[];
@@ -120,7 +122,7 @@ export const services: Service[] = [
     short: "Monitoring & AMC",
     summary:
       "Scheduled monitoring and annual maintenance contracts for cathodic protection systems in service. This is our largest area of repeat work, including the ESSAR EOGEPL Durgapur and Matix pipeline networks.",
-    image: "/images/field/tlp-monitoring.jpg",
+    image: "/images/field/cathode-junction-box.jpg",
     group: "Operations",
     scope: [
       "Monthly and quarterly TLP potential monitoring across the route",
@@ -234,7 +236,7 @@ export const services: Service[] = [
     title: "Test Lead Point (TLP) Installation",
     short: "TLP installation",
     summary:
-      "Supply and installation of H type, B type and special purpose test stations. These form the permanent monitoring interface through which the cathodic protection system is read for the rest of its service life.",
+      "Supply and installation of test stations. These form the permanent monitoring interface through which the cathodic protection system is read for the rest of its service life.",
     image: "/images/field/tlp-installation.jpg",
     group: "Construction",
     scope: [
@@ -257,7 +259,11 @@ export const services: Service[] = [
     short: "Interference mitigation",
     summary:
       "Assessment and mitigation of induced AC from parallel transmission corridors and stray DC from foreign CP systems and traction networks. This is a common risk along Indian pipeline corridors and needs to be addressed at design stage.",
-    image: "/images/products/surge-diverter.jpg",
+    image: "/images/products/zinc-ribbon-anode.webp",
+    image2: {
+      src: "/images/products/solid-state-decoupler.jpg",
+      caption: "Solid state decoupler (SSD) used across an insulating joint",
+    },
     group: "Engineering",
     scope: [
       "Induced AC voltage and current density measurement",
@@ -275,32 +281,35 @@ export const services: Service[] = [
     standards: ["NACE SP0177", "ISO 18086", "CEA safety regulations"],
   },
   {
-    slug: "coating-integrity-holiday-inspection",
-    title: "Coating Integrity & Holiday Inspection",
-    short: "Holiday inspection",
+    slug: "current-attenuation-test",
+    title: "Current Attenuation Test (CAT Survey)",
+    short: "CAT survey",
     summary:
-      "High voltage holiday detection on coated pipe before lowering in, together with field joint coating inspection. Defects found before backfill are the least expensive defects to repair.",
-    image: "/images/field/pin-brazing-connection.jpg",
+      "Measurement of how the protective current decays along the pipeline. An AC signal is injected at a test point and the current is measured at intervals along the route, so that sections with deteriorated coating or an unintended current drain can be identified without excavation.",
+    image: "/images/field/tlp-monitoring.jpg",
     group: "Survey & Testing",
     scope: [
-      "High voltage holiday detection on line pipe and field joints",
-      "Dry film thickness and adhesion verification",
-      "Field joint coating application inspection",
-      "Defect marking, repair and re-test",
+      "AC signal injection at drain points and test lead points",
+      "Current magnitude and phase measurement at intervals along the route",
+      "Attenuation gradient calculation section by section",
+      "Coating conductance and average coating resistance assessment",
+      "Detection of shorted casings, foreign contacts and unintended bonds",
+      "Correlation with test lead point potential records",
     ],
     deliverables: [
-      "Holiday test records per joint and per section",
-      "Defect and repair register",
-      "Coating inspection release for lowering in",
+      "Current attenuation profile plots for each section",
+      "Coating conductance and coating resistance figures per section",
+      "Ranked list of sections requiring detailed survey or repair",
+      "Survey report with recommendations for further assessment",
     ],
-    standards: ["NACE SP0188", "ASTM G62", "ISO 21809"],
+    standards: ["NACE SP0169", "NACE SP0502", "BS EN 13509"],
   },
   {
     slug: "tank-vessel-mounded-bullet-cp",
     title: "Tank, Vessel & Mounded Bullet CP",
     short: "Tank & vessel CP",
     summary:
-      "Cathodic protection of above ground storage tank bottoms, underground vessels and LPG mounded storage bullets. This scope is named specifically on our ISO 9001:2015 certificate.",
+      "Cathodic protection of above ground storage tank bottoms, underground vessels and LPG mounded storage bullets, using distributed anode arrangements and permanent reference cell grids.",
     image: "/images/scenes/mounded-lpg-bullet.jpg",
     group: "Construction",
     scope: [
@@ -322,19 +331,21 @@ export const services: Service[] = [
     title: "City Gas Distribution Network CP",
     short: "CGD network CP",
     summary:
-      'Cathodic protection for the steel sections of city gas distribution networks. We have installed magnesium anodes across 4", 16" and 18" dia mains on the GAIL Gas network at Rourkela.',
+      'Cathodic protection for the steel sections of city gas distribution networks, including cathodic protection at insulating joints. An insulating joint separates the protected section from unprotected piping, and unless it is tested and correctly bonded the protective current either leaks away or the joint is left unprotected on one side. We have installed magnesium anodes across 4", 16" and 18" dia mains on the GAIL Gas network at Rourkela.',
     image: "/images/field/monolithic-isolating-joint.jpg",
     group: "Construction",
     scope: [
       "Galvanic and impressed current CP for steel and MDPE transition sections",
       'Anode installation across 4", 16" and 18" dia networks',
-      "Insulating joint and MIJ verification at every tap-off",
+      "Cathodic protection at insulating joints and monolithic insulating joints",
+      "Insulating joint resistance and isolation testing at every tap-off",
+      "Bonding, surge protection and solid state decoupler installation across joints",
       "Test station installation across the distribution grid",
       "Interference management with adjacent utilities",
     ],
     deliverables: [
       "Installed network CP system with sectional records",
-      "Isolation joint test register",
+      "Insulating joint isolation test register with measured values",
       "Network wide potential survey at handover",
     ],
     standards: ["NACE SP0169", "PNGRB T4S", "ISO 15589-1"],

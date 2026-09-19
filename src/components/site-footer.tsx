@@ -92,7 +92,7 @@ export function SiteFooter() {
 
           <nav aria-labelledby="footer-products">
             <h2 id="footer-products" className="eyebrow mb-5 text-bronze-light">
-              Our Products
+              Product Supply
             </h2>
             <ul className="space-y-2.5 text-sm">
               {products.slice(0, 6).map((p) => (

@@ -6,6 +6,7 @@ import { Reveal } from "@/components/reveal";
 import { ClientMarquee } from "@/components/client-marquee";
 import { Button, Container, Eyebrow, SectionHeading } from "@/components/ui";
 import { BadgeIcon } from "@/components/site-header";
+import { CertificateViewer } from "@/components/certificate-viewer";
 import {
   company,
   epcPillars,
@@ -324,7 +325,7 @@ export default function AboutPage() {
             <SectionHeading
               eyebrow="Certifications & Registrations"
               title="Our Certificates"
-              lead="The certifications and registrations we hold, with their reference numbers and validity, so they can be verified independently."
+              lead="The certifications and registrations we hold. Each certificate can be opened and read in full, and the reference numbers can be verified with the issuing body."
             />
           </Reveal>
 
@@ -355,6 +356,11 @@ export default function AboutPage() {
                     </dd>
                   </div>
                 </dl>
+                <CertificateViewer
+                  src="/images/certificates/iso-9001-2015.jpg"
+                  title="ISO 9001:2015 Certificate"
+                  caption={`Certificate ${company.registrations.iso.certificateNo}, valid until ${company.registrations.iso.expires}`}
+                />
               </article>
             </Reveal>
 
@@ -386,6 +392,11 @@ export default function AboutPage() {
                     </dd>
                   </div>
                 </dl>
+                <CertificateViewer
+                  src="/images/certificates/udyam-registration.jpg"
+                  title="Udyam Registration Certificate"
+                  caption={`${company.registrations.udyam.number}, registered ${company.registrations.udyam.registered}`}
+                />
               </article>
             </Reveal>
           </div>

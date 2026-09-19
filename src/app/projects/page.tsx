@@ -40,11 +40,11 @@ const highlights = [
   {
     title: "Pin brazing installation with epoxy sealing",
     client: "BPCL (via Universal Corrosion Prevention India)",
-    body: "Pin brazing supply and installation with epoxy sealing on a Bharat Petroleum network. Pin brazing is used for low heat input pipe to cable connections where thermit welding would put too much energy into the parent metal. Work is currently in progress.",
+    body: "Pin brazing supply and installation with epoxy sealing on a Bharat Petroleum network. Pin brazing is used for low heat input pipe to cable connections where thermit welding would put too much energy into the parent metal.",
     image: "/images/field/pin-brazing-connection.jpg",
     facts: [
       { k: "Year", v: "2026" },
-      { k: "Status", v: "In progress" },
+      { k: "Status", v: "Completed" },
       { k: "Scope", v: "Supply & installation" },
     ],
   },

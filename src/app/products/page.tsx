@@ -25,8 +25,8 @@ export default function ProductsPage() {
   return (
     <>
       <PageHero
-        eyebrow="Our Products"
-        title="Cathodic Protection Materials"
+        eyebrow="Product Supply"
+        title="Cathodic Protection Material Supply"
         lead="We procure against your technical specification from client approved vendors, with test certificates and inspection records. We also install what we supply, under the same work order where required."
         image="/images/products/cp-tru-panel-bank.jpg"
         crumbs={[{ label: "Products" }]}
