@@ -5,7 +5,7 @@ export type GalleryItem = {
   category:
     | "TLP & Connections"
     | "Junction Boxes"
-    | "Anodes & Ground Beds"
+    | "Anode Ground Bed"
     | "Monitoring & Testing";
   orientation: "portrait" | "landscape";
 };
@@ -13,7 +13,7 @@ export type GalleryItem = {
 export const galleryCategories = [
   "TLP & Connections",
   "Junction Boxes",
-  "Anodes & Ground Beds",
+  "Anode Ground Bed",
   "Monitoring & Testing",
 ] as const;
 
@@ -72,49 +72,49 @@ export const gallery: GalleryItem[] = [
     src: "/images/field/anode-installation.jpg",
     alt: "Magnesium anode being installed in a prepared trench alongside a pipeline",
     caption: "Anode installation",
-    category: "Anodes & Ground Beds",
+    category: "Anode Ground Bed",
     orientation: "portrait",
   },
   {
     src: "/images/field/deep-well-anode-ground-bed.jpg",
     alt: "Deep well anode ground bed under construction with anode string and vent pipe",
     caption: "Deep well anode ground bed",
-    category: "Anodes & Ground Beds",
+    category: "Anode Ground Bed",
     orientation: "portrait",
   },
   {
     src: "/images/field/mmo-anode-borehole-1.jpg",
     alt: "Borehole being drilled for installation of MMO coated titanium anodes",
     caption: "Bore hole work for installation of MMO anodes",
-    category: "Anodes & Ground Beds",
+    category: "Anode Ground Bed",
     orientation: "portrait",
   },
   {
     src: "/images/field/mmo-anode-borehole-2.jpg",
     alt: "Drilling crew at work on a borehole for MMO anode installation",
     caption: "Bore hole work for installation of MMO anodes",
-    category: "Anodes & Ground Beds",
+    category: "Anode Ground Bed",
     orientation: "landscape",
   },
   {
     src: "/images/field/mmo-anode-borehole-3.jpg",
     alt: "Drilling rig set up for borehole work for MMO anode installation",
     caption: "Bore hole work for installation of MMO anodes",
-    category: "Anodes & Ground Beds",
+    category: "Anode Ground Bed",
     orientation: "portrait",
   },
   {
     src: "/images/field/mmo-anode-borehole-4.jpg",
     alt: "Borehole drilling for MMO anode installation alongside plant piping",
     caption: "Bore hole work for installation of MMO anodes",
-    category: "Anodes & Ground Beds",
+    category: "Anode Ground Bed",
     orientation: "landscape",
   },
   {
     src: "/images/field/mmo-anode-borehole-5.jpg",
     alt: "Drilling rig mast during borehole work for MMO anode installation",
     caption: "Bore hole work for installation of MMO anodes",
-    category: "Anodes & Ground Beds",
+    category: "Anode Ground Bed",
     orientation: "portrait",
   },
   {

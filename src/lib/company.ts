@@ -27,6 +27,14 @@ export const company = {
   phone: "+91 89611 74927",
   phoneHref: "tel:+918961174927",
 
+  /** Head office pin, from the location shared by the company. */
+  map: {
+    shareUrl: "https://maps.app.goo.gl/Ycv5FoLVXcSn4AF19",
+    lat: 22.5642357,
+    lng: 88.3806792,
+    label: "Parikhit Roy Lane, Beleghata, Kolkata 700015",
+  },
+
   /** WhatsApp is the enquiry channel across the site. */
   whatsapp: "+91 89611 74927",
   whatsappNumber: "918961174927",

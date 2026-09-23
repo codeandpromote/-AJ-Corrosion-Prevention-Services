@@ -14,9 +14,7 @@ export const metadata: Metadata = {
     "Contact AJ Corrosion Prevention Services. Head office at Parikshit Roy Lane, Tangra, Kolkata 700015. Call or WhatsApp +91 89611 74927 for cathodic protection design, supply, installation and maintenance enquiries.",
 };
 
-const mapQuery = encodeURIComponent(
-  "Parikshit Roy Lane, Tangra, Kolkata, West Bengal 700015, India",
-);
+const mapEmbed = `https://maps.google.com/maps?q=${company.map.lat},${company.map.lng}&z=16&hl=en&output=embed`;
 
 const faqs = [
   {
@@ -140,7 +138,7 @@ export default function ContactPage() {
                 {company.address.state}, {company.address.country}
               </address>
               <Button
-                href={`https://www.google.com/maps/search/?api=1&query=${mapQuery}`}
+                href={company.map.shareUrl}
                 variant="outline"
                 className="mt-9"
               >
@@ -152,7 +150,7 @@ Open in Google Maps
               <div className="relative aspect-[16/11] overflow-hidden border border-line bg-white">
                 <iframe
                   title={`Map showing the head office of ${company.name} in Tangra, Kolkata`}
-                  src={`https://maps.google.com/maps?q=${mapQuery}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                  src={mapEmbed}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="absolute inset-0 h-full w-full grayscale-[0.35]"

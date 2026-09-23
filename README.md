@@ -56,7 +56,7 @@ src/
     about/                 Company, principles, quality policy, leadership,
                            journey, certifications, equipment register
     services/              Index + 15 detail pages
-    products/              Index + 11 detail pages
+    products/              Index + 17 detail pages
     projects/              Project register with client/scope filtering
     gallery/               Filterable site photography with lightbox
     contact/
@@ -78,7 +78,7 @@ All site content lives in `src/lib/`. No copy is hardcoded in page components.
 | --- | --- |
 | `company.ts` | Name, address, phone, WhatsApp, registrations, vision/strength/goal, quality policy, equipment register, EPC pillars, headline stats |
 | `services.ts` | 15 services: scope, deliverables, standards, group |
-| `products.ts` | 11 products: specifications, applications, category, optional second photo |
+| `products.ts` | 17 products: specifications, applications, category, optional second photo |
 | `projects.ts` | Project register from the company profile |
 | `clients.ts` | Client and end-customer logos |
 | `industries.ts` | Six asset classes |

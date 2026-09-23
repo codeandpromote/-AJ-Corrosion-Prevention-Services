@@ -69,10 +69,8 @@ export default function AboutPage() {
                 <p>
                   AJ Corrosion Prevention Services introduces itself as an ISO
                   9001:2015 certified company and one of the leading EPC
-                  contractors for cathodic protection of Cathodic Protection
-                  connection work on Monolithic Isolating Joint networks, Bore
-                  hole work for installation of MMO anodes, plant piping,
-                  mounded storage vessels and tanks.
+                  contractors for cathodic protection for City Gas Distribution Network, Cross Country Pipelines, plant piping,
+                  mounded storage vessels and tanks, etc.
                 </p>
                 <p>
                   The day-to-day operation of the establishment is looked after

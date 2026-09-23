@@ -45,6 +45,12 @@ const nextConfig: NextConfig = {
         destination: "/services/current-attenuation-test",
         permanent: true,
       },
+      {
+        // Split into separate surge diverter and solid state decoupler products.
+        source: "/products/surge-diverters-polarisation-cells",
+        destination: "/products/surge-diverters",
+        permanent: true,
+      },
     ];
   },
 

@@ -147,7 +147,8 @@ export const products: Product[] = [
     tagline: "Buried Cu/CuSO₄ cells for stable long term measurement",
     summary:
       "Permanent copper / copper sulphate reference electrodes buried adjacent to the structure, giving a stable reference for potential measurement over the life of the asset without having to open the ground each time.",
-    image: "/images/field/cable-laying-b-type-tlp.jpg",
+    image: "/images/products/permanent-reference-electrode.jpg",
+    fit: "contain",
     specs: [
       { label: "Type", value: "Cu/CuSO₄ permanent and portable" },
       { label: "Stability", value: "±5 mV over design life" },
@@ -163,31 +164,75 @@ export const products: Product[] = [
     ],
   },
   {
-    slug: "surge-diverters-polarisation-cells",
-    name: "Surge Diverters & Solid State Decouplers",
+    slug: "surge-diverters",
+    name: "Surge Diverters",
     category: "Power & Control",
-    tagline: "AC protection for isolation joints without losing DC isolation",
+    tagline: "Lightning and surge protection across insulating joints",
     summary:
-      "Solid state decouplers, polarisation cell replacements and surge diverters. These provide a low impedance path for AC fault current and lightning surge while blocking the DC current that the CP system depends on.",
+      "Surge diverters fitted across monolithic insulating joints and isolating flanges. They clamp lightning impulse and switching surges that would otherwise puncture the joint, while leaving the DC isolation the cathodic protection system depends on intact.",
     image: "/images/products/surge-diverter.jpg",
     fit: "contain",
-    image2: {
-      src: "/images/products/solid-state-decoupler.jpg",
-      caption: "Solid state decoupler (SSD)",
-    },
     specs: [
-      { label: "Function", value: "AC grounding with DC blocking" },
-      { label: "AC fault rating", value: "Rated to client fault study" },
-      { label: "DC blocking", value: "±2 to ±4 V threshold" },
-      { label: "Surge capability", value: "Lightning impulse rated" },
+      { label: "Function", value: "Surge clamping with DC isolation retained" },
+      { label: "Surge capability", value: "Lightning impulse rated, 8/20 microsecond" },
+      { label: "Discharge current", value: "Rated to the site lightning risk assessment" },
+      { label: "Response time", value: "Nanosecond order" },
       { label: "Enclosure", value: "Weatherproof, hazardous area on request" },
-      { label: "Mounting", value: "Across monolithic insulating joints" },
+      { label: "Mounting", value: "Across monolithic insulating joints and flanges" },
     ],
     applications: [
       "Monolithic insulating joint protection",
-      "AC interference mitigation earthing",
-      "Lightning protection at CP stations",
       "Isolating flange protection in plant areas",
+      "Lightning protection at CP stations and valve stations",
+      "Above ground pipeline sections exposed to strike risk",
+    ],
+  },
+  {
+    slug: "solid-state-decouplers",
+    name: "Solid State Decouplers",
+    category: "Power & Control",
+    tagline: "AC grounding and DC blocking in a single solid state unit",
+    summary:
+      "Solid state decouplers provide a continuous low impedance path for AC fault current and lightning surge while blocking the DC that the cathodic protection system depends on. With no moving parts and no electrolyte, they need no maintenance and their performance does not drift in service.",
+    image: "/images/products/solid-state-decoupler.jpg",
+    fit: "contain",
+    specs: [
+      { label: "Function", value: "AC grounding with continuous DC blocking" },
+      { label: "DC blocking", value: "Plus or minus 2 V to plus or minus 4 V threshold" },
+      { label: "AC fault rating", value: "Rated to the client fault current study" },
+      { label: "Surge capability", value: "Lightning impulse rated" },
+      { label: "Enclosure", value: "Weatherproof, hazardous area rated versions available" },
+      { label: "Maintenance", value: "None required in service" },
+    ],
+    applications: [
+      "AC interference mitigation on pipelines parallel to power lines",
+      "Monolithic insulating joint protection where fault duty is high",
+      "Bonding between protected and unprotected structures",
+      "Replacement of electrolyte filled polarisation cells",
+    ],
+  },
+  {
+    slug: "polarization-cells",
+    name: "Polarization Cells",
+    category: "Power & Control",
+    tagline: "Instant shorting for cathodic protection under AC fault",
+    summary:
+      "Electrolytic polarization cells that stay open to the DC cathodic protection current but short instantly under AC fault or lightning surge, carrying the fault to earth. The traditional solution where a very high short duration current rating is required.",
+    image: "/images/products/polarization-cell.jpg",
+    fit: "contain",
+    specs: [
+      { label: "Function", value: "Instant shorting for cathodic protection" },
+      { label: "Rated current capacity", value: "Up to 5000 A for 1 second" },
+      { label: "DC blocking", value: "Blocks CP current within the cell threshold" },
+      { label: "Electrolyte", value: "Alkaline, with high and low level indication" },
+      { label: "Terminals", value: "Two stud terminals for bonding cables" },
+      { label: "Maintenance", value: "Electrolyte level checked periodically" },
+    ],
+    applications: [
+      "High AC fault duty locations on transmission pipelines",
+      "Insulating joint protection at power line crossings",
+      "Earthing of above ground pipeline sections",
+      "Substation and plant boundary bonding",
     ],
   },
   {
@@ -220,7 +265,8 @@ export const products: Product[] = [
     tagline: "Passive AC grounding across insulating joints",
     summary:
       "Sealed zinc grounding cells fitted across insulating joints and between structures. They provide a low impedance path for AC fault current and lightning surge while maintaining DC isolation, with no electronics to fail and no maintenance requirement.",
-    image: "/images/field/electrical-earthpit.jpg",
+    image: "/images/products/zinc-grounding-cell.jpg",
+    fit: "contain",
     specs: [
       { label: "Construction", value: "Two zinc electrodes in a gypsum and bentonite backfill" },
       { label: "Function", value: "AC grounding with DC isolation maintained" },
@@ -243,7 +289,8 @@ export const products: Product[] = [
     tagline: "Direct measurement of protection at a known surface area",
     summary:
       "Steel coupons of known surface area buried adjacent to the pipeline and connected through a test station. Because the coupon can be disconnected instantly, it gives an IR drop free potential reading and a direct measurement of current density that the pipeline itself cannot provide.",
-    image: "/images/field/cathode-junction-box.jpg",
+    image: "/images/products/corrosion-coupon.jpg",
+    fit: "contain",
     specs: [
       { label: "Material", value: "Same grade as the protected structure" },
       { label: "Surface area", value: "1, 10 or 100 cm2 to order" },

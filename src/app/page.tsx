@@ -273,23 +273,20 @@ export default function HomePage() {
             {industries.map((industry, i) => (
               <li key={industry.slug} className="flex">
                 <Reveal delay={(i % 3) * 90} className="flex w-full">
-                  <article className="group relative flex h-full flex-col overflow-hidden bg-espresso">
-                    <div className="relative aspect-[16/11]">
+                  <article className="group relative w-full overflow-hidden bg-espresso">
+                    <div className="relative aspect-[4/3]">
                       <Image
                         src={industry.image}
                         alt=""
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                        className="photo-tone object-cover opacity-55 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06] group-hover:opacity-40"
+                        className="photo-tone object-cover opacity-70 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.06]"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/45 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/35 to-transparent" />
                     </div>
-                    <div className="flex flex-1 flex-col p-7 lg:p-8">
-                      <h3 className="font-display text-xl text-white">{industry.title}</h3>
-                      <p className="mt-3 text-sm leading-relaxed text-taupe">
-                        {industry.blurb}
-                      </p>
-                    </div>
+                    <h3 className="font-display absolute inset-x-0 bottom-0 p-7 text-xl text-white lg:p-8">
+                      {industry.title}
+                    </h3>
                   </article>
                 </Reveal>
               </li>
